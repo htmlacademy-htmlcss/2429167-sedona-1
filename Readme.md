@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Абшилава](https://up.htmlacademy.ru/htmlcss-individual/1/user/2429167).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Лесухин`(https://htmlacademy.ru/profile/caneklis).
 
 ---
 
