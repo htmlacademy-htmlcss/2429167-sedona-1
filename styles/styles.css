@@ -30,6 +30,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 15px 0 #00000033;
+    color: #000000;
 }
 
 *,
@@ -184,6 +185,7 @@ body {
 .advantages-intersection {
     text-align: center;
     padding: 64px 0;
+    margin: 0 345px;
 }
 
 .button {
@@ -424,7 +426,7 @@ body {
     text-decoration: none;
 }
 
-.footer-container {
+.page-footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -438,6 +440,8 @@ body {
     padding: 0;
     align-items: center;
     width: 250px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .footer-social {
@@ -452,11 +456,10 @@ body {
 
 .phone-text {
     text-align: center;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .made-by {
-    margin-left: auto;
     width: 250px;
     text-align: right;
 }
