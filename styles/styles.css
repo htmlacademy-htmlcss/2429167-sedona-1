@@ -51,6 +51,7 @@ body {
 
 .page-header-logo {
     margin-right: 30px;
+    margin-bottom: -6px;
 }
 
 .navigation-list {
@@ -258,6 +259,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px 70px 40px 70px;
+    align-items: center;
 }
 
 .catalog-hotels-title {
@@ -342,16 +344,17 @@ body {
 }
 
 .catalog-filter-container {
+    background-image: url("..\images\filter-background.jpg");
+    background: #FFFFFF;
     padding: 35px 70px 35px 70px;
+    background-repeat: no-repeat;
+    background-position: 0;
 }
 
 .hotel-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #E6E6E6
-}
-
-.hotel-card-content {
+    border: 1px solid #E6E6E6;
     padding: 20px;
 }
 
@@ -501,6 +504,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 40px 70px;
 }
 
 .footer-social-list {
