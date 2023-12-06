@@ -343,7 +343,7 @@ body {
 }
 
 .catalog-filter-container {
-    background-image: url("..\images\filter-background.jpg");
+    background-image: url("../images/filter-background.jpg");
     background: #FFFFFF;
     padding: 35px 70px 35px 70px;
     background-repeat: no-repeat;
