@@ -199,6 +199,7 @@ body {
     background-color: #82B3D3;
     text-transform: uppercase;
     border-style: none;
+    color: #ffffff;
 }
 
 .button-reset {
@@ -344,11 +345,11 @@ body {
 
 .catalog-filter-container {
     background-image: url("../images/filter-background.jpg");
-    background: #FFFFFF;
     padding: 35px 70px 35px 70px;
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 1200px 476px;
+    color: #ffffff;
 }
 
 .hotel-card {
