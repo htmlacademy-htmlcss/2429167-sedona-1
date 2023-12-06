@@ -478,7 +478,7 @@ body {
 }
 
 .pagination-item:not(:last-child) {
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 .pagination-link {
@@ -487,6 +487,8 @@ body {
     width: 60px;
     height: 60px;
     padding: 12px 2px;
+    font-size: 20px;
+    line-height: 36px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
@@ -500,6 +502,8 @@ body {
 
 .pagination-interval {
     background-color: #ffffff;
+    text-align: center;
+    color: #000000;
 }
 
 .footer-contact-phone {
