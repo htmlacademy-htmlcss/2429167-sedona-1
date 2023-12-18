@@ -75,6 +75,7 @@ body {
 }
 
 .navigation-link {
+    position: relative;
     display: block;
     padding: 20px 16px;
     font-family: "PT Sans", sans-serif;
@@ -106,6 +107,36 @@ body {
     padding: 8px 34px;
     justify-content: center;
     border-radius: 4px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+}
+
+.navigation-button:hover {
+    background-color: #615048;
+}
+
+.navigation-button:focus {
+    background-color: #615048;
+}
+
+.navigation-button:active {
+    background-color: #756157;
+    color: #FFFFFF4D;
+}
+
+.navigation-button:disabled {
+    background-color: #E5E5E5;
+}
+
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #000000;
 }
 
 .advantages-title-intro {
@@ -117,11 +148,23 @@ body {
 }
 
 .advantages-title {
+    position: relative;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.advantages-title::before {
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: -30px;
+    left: 50%;
+    background-color: #FFFFFF4D;
+    content: "";
+    margin-left: -32px;
 }
 
 .advantages-list {
@@ -173,11 +216,13 @@ body {
 }
 
 .advantages-title {
+    position: relative;
     margin: 0 auto;
     text-align: center;
 }
 
 .advantages-text {
+    margin-top: 62px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -200,14 +245,72 @@ body {
     text-transform: uppercase;
     border-style: none;
     color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #615048;
+}
+
+.button:focus {
+    background-color: #615048;
+}
+
+.button:active {
+    background-color: #756157;
+    color: #FFFFFF4D;
+}
+
+.button:disabled {
+    background-color: #E5E5E5;
 }
 
 .button-reset {
     background-color: transparent;
+    margin: 32px;
+}
+
+.button-reset:hover {
+    background-color: transparent;
+    opacity: 60%;
+}
+
+.button-reset:focus {
+    background-color: transparent;
+    border: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+    background-color: transparent;
+    color: #FFFFFF4D;
+}
+
+.button-reset:disabled {
+    background-color: transparent;
+    opacity: 10%;
 }
 
 .button-submit {
+    background-color: #82B3D3;
     border-radius: 4px;
+}
+
+.button-submit:hover {
+    background-color: #68A2CA;
+}
+
+.button-submit:focus {
+    background-color: #68A2CA;
+}
+
+.button-submit:active {
+    background-color: #82B3D3;
+    color: #FFFFFF4D;
+}
+
+.button-submit:disabled {
+    background-color: #E5E5E5;
 }
 
 .visually-hidden {
@@ -222,8 +325,22 @@ body {
 }
 
 .newsletter-button {
-    background-color: #756157;
+    background-color: #82B3D3;
     color: #ffffff;
+    padding: 8px 50px;
+}
+
+.newsletter-button:hover {
+    background-color: #68A2CA;
+}
+
+.newsletter-button:focus {
+    background-color: #68A2CA;
+}
+
+.newsletter-button:active {
+    background-color: #82B3D3;
+    color: #FFFFFF4D;
 }
 
 .catalog-filter {
@@ -284,6 +401,14 @@ body {
     line-height: 23px;
 }
 
+.control:hover {
+    opacity: 60%;
+}
+
+.control:active {
+    opacity: 30%;
+}
+
 .inner-header-title {
     font-weight: 700;
     font-size: 60px;
@@ -314,12 +439,14 @@ body {
 
 .find-hotels {
     text-align: center;
+    padding: 96px 304px;
 }
 
 .find-hotels-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    text-transform: uppercase;
 }
 
 .find-hotels-text {
@@ -423,6 +550,53 @@ body {
     border-radius: 4px;
 }
 
+.hotel-card-to-favorites:hover {
+    background-color: #68A2CA;
+}
+
+.hotel-card-to-favorites:focus {
+    background-color: #68A2CA;
+}
+
+.hotel-card-to-favorites:active {
+    background-color: #83B3D3;
+    color: #FFFFFF4D;
+}
+
+.hotel-card-to-favorites:disabled {
+    background-color: #E5E5E5;
+}
+
+.hotel-card-in-favorites {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #7DB54F;
+}
+
+.hotel-card-in-favorites:hover {
+    background-color: #6C9E42;
+}
+
+.hotel-card-in-favorites:focus {
+    background-color: #6C9E42;
+}
+
+.hotel-card-in-favorites:active {
+    background-color: #7DB54F;
+    color: #FFFFFF4D;
+}
+
+.hotel-card-in-favorites:disabled {
+    background-color: #E5E5E5;
+}
+
 .hotel-card-rating {
     grid-row: 5 / 6;
     grid-column: 2 / 3;
@@ -451,6 +625,14 @@ body {
 
 .subscribe {
     text-align: center;
+    padding: 104px 258px;
+    background-image: url(../images/subscribe-background.jpg);
+    color: #ffffff;
+}
+
+.subscribe-inner {
+    text-align: center;
+    padding: 104px 258px;
 }
 
 .subscribe-title {
@@ -458,6 +640,7 @@ body {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    text-transform: uppercase;
 }
 
 .subscribe-text {
@@ -475,6 +658,20 @@ body {
 
 .pagination-item {
     background-color: #82B3D3;
+    border-radius: 4px;
+}
+
+.pagination-item:hover {
+    background-color: #68A2CA;
+}
+
+.pagination-item:focus {
+    background-color: #68A2CA;
+}
+
+.pagination-item:active {
+    background-color: #82B3D3;
+    color: #FFFFFF4D;
 }
 
 .pagination-item:not(:last-child) {
@@ -498,6 +695,7 @@ body {
 .pagination-current {
     background-color: #F2F2F2;
     color: #000000;
+    border-radius: 4px;
 }
 
 .pagination-interval {
@@ -539,6 +737,10 @@ body {
     margin-right: auto;
 }
 
+.footer-button {
+    fill: #83B3D3;
+}
+
 .footer-social-item {
     padding: 0 10px;
 }
@@ -556,10 +758,35 @@ body {
 .breadcrumbs {
     display: flex;
     list-style-type: none;
-    padding-left: 70px;
+    padding-left: 0;
 }
 
 .breadcrumbs-link {
+    position: relative;
     font-size: 16px;
     line-height: 21px;
+}
+
+.breadcrumbs-item {
+    position: relative;
+}
+
+.breadcrumbs-icon-home {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #ffffff;
+}
+
+.breadcrumbs-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #ffffff;
 }
