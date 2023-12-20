@@ -1009,3 +1009,31 @@ body {
 .breadcrumbs-icon-home {
     fill: #ffffff;
 }
+
+.select-control {
+    width: 290px;
+    height: 49px;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.select-control:hover {
+    border-color: #68A2CA;
+}
+
+.select-control:focus {
+    border-color: #68A2CA;
+}
+
+.select-control:active {
+    border-color: #3F5E72;
+}
+
+.select-control:disabled {
+    border-color: #0000004D;
+    color: #0000004D;
+}
