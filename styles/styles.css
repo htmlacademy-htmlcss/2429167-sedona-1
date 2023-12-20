@@ -994,15 +994,15 @@ body {
 }
 
 .breadcrumbs-item {
-    position: relative;
-    min-width: auto;
     padding-right: 20px;
 }
 
 .breadcrumbs-item:not(:last-child) {
     background-image: url("../images/breadcrumbs-intersection-icon.svg");
     background-repeat: no-repeat;
-    background-position: 25px;
+    background-position: 30px;
+    padding-right: 24px 18px;
+    background-position-x: right;
 }
 
 .breadcrumbs-icon-home {
