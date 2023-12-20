@@ -217,6 +217,7 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 .advantages-title::before {
@@ -227,18 +228,11 @@ body {
     left: 50%;
     background-color: #0000004D;
     content: "";
-    margin-left: -32px;
+    transform: translateX(-50%);
 }
 
 .advantages-item-darker .advantages-title::before {
-    position: absolute;
-    width: 60px;
-    height: 2px;
-    bottom: -30px;
-    left: 50%;
     background-color: #ffffff4D;
-    content: "";
-    margin-left: -32px;
 }
 
 .advantages-title-continue {
@@ -322,12 +316,6 @@ body {
     background-image: url("../images/advantage-icon-3.svg");
     background-repeat: no-repeat;
     background-position: 160px 81px;
-}
-
-.advantages-title {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .advantages-text {
@@ -801,31 +789,23 @@ body {
     padding-left: 70px;
 }
 
-.hotel-card-four-stars {
+.hotel-card-stars {
     grid-row: 5 / 6;
     grid-column: 1 / 2;
-    background-image: url("../images/hotel-star.svg"), url("../images/hotel-star.svg"), url("../images/hotel-star.svg"), url("../images/hotel-star.svg");
-    background-repeat: no-repeat;
-    background-position: 0, 24px, 48px, 72px;
-    padding: 10px 0;
+    background-image: url("../images/hotel-star.svg");
+    background-repeat: space;
+}
+
+.hotel-card-four-stars {
+    width: 89px;
 }
 
 .hotel-card-third-stars {
-    grid-row: 5 / 6;
-    grid-column: 1 / 2;
-    background-image: url("../images/hotel-star.svg"), url("../images/hotel-star.svg"), url("../images/hotel-star.svg");
-    background-repeat: no-repeat;
-    background-position: 0, 24px, 48px;
-    padding: 10px 0;
+    width: 70px;
 }
 
 .hotel-card-two-stars {
-    grid-row: 5 / 6;
-    grid-column: 1 / 2;
-    background-image: url("../images/hotel-star.svg"), url("../images/hotel-star.svg");
-    background-repeat: no-repeat;
-    background-position: 0, 24px;
-    padding: 10px 0;
+    width: 40px;
 }
 
 .subscribe {
@@ -953,16 +933,16 @@ body {
     width: 250px;
     margin-top: 40px;
     margin-bottom: 30px;
-    padding: 0 10px;
 }
 
 .footer-social-item {
-    min-width: 50px;
-    min-height: 50px;
     text-align: center;
 }
 
 .social-button {
+    display: block;
+    width: 50px;
+    height: 50px;
     color: #83B3D3;
     transition: color 0.6s ease;
 }
@@ -977,6 +957,10 @@ body {
 
 .social-button:active {
     color: #68A2CA4D;
+}
+
+.social-icon {
+    margin-top: 15px;
 }
 
 .phone-text {
@@ -1010,6 +994,7 @@ body {
     display: flex;
     list-style-type: none;
     padding-left: 0;
+    gap: 20px;
 }
 
 .breadcrumbs-link {
@@ -1020,20 +1005,15 @@ body {
 
 .breadcrumbs-item {
     position: relative;
+    min-width: auto;
 }
 
-.breadcrumbs-item:nth-child(1) {
+.breadcrumbs-item:not(:last-child) {
     background-image: url("../images/breadcrumbs-intersection-icon.svg");
     background-repeat: no-repeat;
     background-position: 24px 10px;
 }
 
 .breadcrumbs-icon-home {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    margin-right: 28px;
     fill: #ffffff;
 }
