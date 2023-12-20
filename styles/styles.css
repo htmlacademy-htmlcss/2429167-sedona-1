@@ -203,6 +203,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
+    max-width: 255px;
 }
 
 .advantages-title::before {
@@ -248,27 +249,11 @@ body {
     padding: 102px 85px;
 }
 
-.advantages-list .advantages-item-house {
+.advantages-list .advantages-item-background {
     padding: 183px 85px 80px 85px;
 }
 
-.advantages-item-house .advantages-text {
-    margin-top: 30px;
-}
-
-.advantages-list .advantages-item-food {
-    padding: 183px 85px 80px 85px;
-}
-
-.advantages-item-food .advantages-text {
-    margin-top: 30px;
-}
-
-.advantages-list .advantages-item-souvenirs {
-    padding: 183px 85px 80px 85px;
-}
-
-.advantages-item-souvenirs .advantages-text {
+.advantages-item-background .advantages-text {
     margin-top: 30px;
 }
 
@@ -296,19 +281,19 @@ body {
     background-color: #83B3D333;
 }
 
-.advantages-item-house {
+.advantages-item-background:nth-child(1) {
     background-image: url("../images/advantage-icon-1.svg");
     background-repeat: no-repeat;
     background-position: 160px 81px;
 }
 
-.advantages-item-food {
+.advantages-item-background:nth-child(2) {
     background-image: url("../images/advantage-icon-2.svg");
     background-repeat: no-repeat;
     background-position: 160px 81px;
 }
 
-.advantages-item-souvenirs {
+.advantages-item-background:nth-child(3) {
     background-image: url("../images/advantage-icon-3.svg");
     background-repeat: no-repeat;
     background-position: 160px 81px;
@@ -785,6 +770,10 @@ body {
     background-position-y: center;
 }
 
+.hotel-card-five-stars {
+    width: 99px;
+}
+
 .hotel-card-four-stars {
     width: 89px;
 }
@@ -797,10 +786,14 @@ body {
     width: 40px;
 }
 
+.hotel-card-one-star {
+    width: 20px;
+}
+
 .subscribe {
     text-align: center;
     padding: 104px 258px;
-    background-image: url(../images/subscribe-background.jpg);
+    background-image: url("../images/subscribe-background.jpg");
     color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1000,7 +993,8 @@ body {
     background-image: url("../images/breadcrumbs-intersection-icon.svg");
     background-repeat: no-repeat;
     background-position: 30px;
-    padding-right: 24px 18px;
+    background-position-y: 10px;
+    padding-right: 18px;
     background-position-x: right;
 }
 
