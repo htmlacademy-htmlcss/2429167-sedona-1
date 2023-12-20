@@ -114,10 +114,6 @@ body {
     margin: 0;
 }
 
-.navigation-link-notification {
-    position: relative;
-}
-
 .notification {
     display: flex;
     position: absolute;
