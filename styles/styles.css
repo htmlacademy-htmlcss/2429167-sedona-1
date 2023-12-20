@@ -118,7 +118,7 @@ body {
     position: relative;
 }
 
-.navigation-link-notification::after {
+.notification {
     display: flex;
     position: absolute;
     height: 20px;
@@ -131,7 +131,6 @@ body {
     align-items: center;
     top: 11px;
     left: 20px;
-    content: "12";
     border-radius: 10px;
 }
 
