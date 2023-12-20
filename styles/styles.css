@@ -784,6 +784,8 @@ body {
     grid-column: 1 / 2;
     background-image: url("../images/hotel-star.svg");
     background-repeat: space;
+    height: 32px;
+    background-position-y: center;
 }
 
 .hotel-card-four-stars {
