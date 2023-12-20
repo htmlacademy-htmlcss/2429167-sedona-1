@@ -99,17 +99,7 @@ body {
 
 .navigation-link-current::before {
     position: absolute;
-    width: 68px;
-    border: 2px #756157 solid;
-    height: 0;
-    bottom: -2px;
-    background-color: #756157;
-    content: "";
-}
-
-.navigation-link-inner-current::before {
-    position: absolute;
-    width: 93px;
+    width: calc(100% - 32px);
     border: 2px #756157 solid;
     height: 0;
     bottom: -2px;
@@ -994,7 +984,7 @@ body {
     display: flex;
     list-style-type: none;
     padding-left: 0;
-    gap: 20px;
+    gap: 10px;
 }
 
 .breadcrumbs-link {
@@ -1006,12 +996,13 @@ body {
 .breadcrumbs-item {
     position: relative;
     min-width: auto;
+    padding-right: 20px;
 }
 
 .breadcrumbs-item:not(:last-child) {
     background-image: url("../images/breadcrumbs-intersection-icon.svg");
     background-repeat: no-repeat;
-    background-position: 24px 10px;
+    background-position: 25px;
 }
 
 .breadcrumbs-icon-home {
