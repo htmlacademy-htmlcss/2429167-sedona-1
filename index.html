@@ -166,6 +166,70 @@
     </div>
   </footer>
 
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-booking">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="booking-date" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-flex">
+            <span class="field-group">
+              <label class="form-title" for="arrival">Дата Заезда:</label>
+              <span class="arrival-form">
+                <div class="field">
+                  <input class="date-field" type="text" id="arrival" name="date-of-arrival" placeholder="27 апреля 2020">
+                  <button class="date-button"></button>
+                  <p class="error-text-red">Мы не можем отправить вас в прошлое</p>
+                </div>
+              </span>
+            </span>
+            <span class="field-group">
+              <label class="form-title">Дата Выезда:</label>
+              <span class="departure-form">
+                <div class="field">
+                  <input class="date-field" type="text" id="departure" name="date-of-departure" placeholder="1 сентября 2023">
+                  <button class="date-button"></button>
+                  <p class="error-text-black">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+              </span>
+            </span>
+            <div class="number-inputs-flex">
+              <span class="modal-input">
+                <label class="form-title" for="adults">Взрослые:</label>
+                <div class="plus-minus-input">
+                  <button class="minus-button"></button>
+                  <input class="number-input" type="number" value="2" name="adults-form" id="adults">
+                  <button class="plus-button"></button>
+                </div>
+              </span>
+              <span class="modal-input input-tooltip">
+                <span class="form-title">  
+                  <label class="form-title" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <span class="tooltip-text">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>    
+                  </span>
+                </span>
+                <div class="plus-minus-input">
+                  <button class="minus-button"></button>
+                  <input class="number-input" type="number" value="2" name="children-form" id="children">
+                  <button class="plus-button"></button>
+                </div>
+              </span>
+            </div>
+            <button class="modal-submit-button button">Найти</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
 </body>
 
 </html>
