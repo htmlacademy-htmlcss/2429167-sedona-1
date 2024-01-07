@@ -587,14 +587,6 @@ body {
     height: 23px;
 }
 
-.control:hover {
-    opacity: 60%;
-}
-
-.control:active {
-    opacity: 30%;
-}
-
 .control.control-checkbox {
     position: relative;
     padding-left: 36px;
@@ -616,6 +608,19 @@ body {
 
 .control:active .control-mark {
     opacity: 30%;
+}
+
+.control:hover .control-label {
+    opacity: 60%;
+}
+
+.control:active .control-label {
+    opacity: 30%;
+}
+
+.control + .control-input:disabled + .control-mark {
+    opacity: 30%;
+    pointer-events: none;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
@@ -649,6 +654,16 @@ body {
     background-color: #3F5E72;
     border-radius: 50%;
     content: "";
+}
+
+.control-input:disabled + .control-mark {
+    opacity: 30%;
+    pointer-events: none;
+}
+
+.control-input:disabled + .control-mark + .control-label {
+    opacity: 30%;
+    pointer-events: none;
 }
 
 .inner-header-title {
@@ -1338,7 +1353,6 @@ body {
     border-radius: 4px;
     width: 440px;
     height: 48px;
-    justify-content: space-between;
 }
 
 .error-text-red {
@@ -1366,9 +1380,13 @@ body {
     line-height: 24px;
     background-color: transparent;
     border: none;
+    padding: 0;
+    width: 440px;
+    height: 24px;
 }
 
 .date-button {
+    position: absolute;
     border: none;
     background-image: url("../images/date-button.svg");
     width: 20px;
@@ -1378,6 +1396,8 @@ body {
     background-position: center;
     cursor: pointer;
     opacity: 30%;
+    right: 20px;
+    top: 14px;
 }
 
 .field-flex {
