@@ -825,6 +825,7 @@ body {
     border: none;
     background-color: transparent;
     appearance: textfield;
+    font-weight: 700;
 }
 
 .range-input::-webkit-inner-spin-button,
