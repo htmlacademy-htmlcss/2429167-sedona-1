@@ -166,7 +166,7 @@
     </div>
   </footer>
 
-  <div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-booking">
       <button class="modal-close-button" type="button">
         <svg class="close-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15"><path fill="CurrentColor" d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"/></svg>
@@ -180,8 +180,8 @@
               <label class="form-title" for="arrival">Дата Заезда:</label>
               <span class="arrival-form">
                 <div class="field">
-                  <input class="date-field" type="text" id="arrival" name="date-of-arrival" placeholder="27 апреля 2020" value="27 апреля 2020">
-                  <button class="date-button" type="button"></button>
+                  <input class="date-field" type="text" id="arrival" name="date-of-arrival" placeholder="Укажите дату" value="27 апреля 2020" required>
+                  <button class="date-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="CurrentColor" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="CurrentColor" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path fill="CurrentColor" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg></button>
                   <p class="error-text-red">Мы не можем отправить вас в прошлое</p>
                 </div>
               </span>
@@ -190,8 +190,8 @@
               <label class="form-title">Дата Выезда:</label>
               <span class="departure-form">
                 <div class="field">
-                  <input class="date-field" type="text" id="departure" name="date-of-departure" placeholder="1 сентября 2023" value="1 сентября 2023">
-                  <button class="date-button" type="button"></button>
+                  <input class="date-field" type="text" id="departure" name="date-of-departure" placeholder="Укажите дату" value="1 сентября 2023" required>
+                  <button class="date-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 16 15"><path fill="CurrentColor" d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path fill="CurrentColor" d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/><path fill="CurrentColor" d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg></button>
                   <p class="error-text-black">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
               </span>
@@ -203,7 +203,7 @@
                   <button class="minus-button" type="button">
                     <svg class="minus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2"><path fill="CurrentColor" d="M0 0v2h14V0H0Z"/></svg>
                   </button>
-                  <input class="number-input" type="number" value="2" name="adults-form" id="adults">
+                  <input class="number-input" type="number" value="2" name="adults-form" id="adults" required>
                   <button class="plus-button" type="button">
                     <svg aria-hidden="true" focusable="false" class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="CurrentColor" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                   </button>
@@ -225,7 +225,7 @@
                   <button class="minus-button" type="button">
                     <svg class="minus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2"><path fill="CurrentColor" d="M0 0v2h14V0H0Z"/></svg>
                   </button>
-                  <input class="number-input" type="number" value="2" name="children-form" id="children">
+                  <input class="number-input" type="number" value="2" name="children-form" id="children" required>
                   <button class="plus-button" type="button">
                     <svg aria-hidden="true" focusable="false" class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><path fill="CurrentColor" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                   </button>

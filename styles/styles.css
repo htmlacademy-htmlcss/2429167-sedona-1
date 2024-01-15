@@ -93,6 +93,30 @@ body {
     text-decoration: none;
 }
 
+.navigation-link:hover::before {
+    position: absolute;
+    width: calc(100% - 32px);
+    border: 2px #756157 solid;
+    height: 0;
+    bottom: -2px;
+    background-color: #756157;
+    content: "";
+}
+
+.navigation-link:focus {
+    outline: none;
+}
+
+.navigation-link:focus::before {
+    position: absolute;
+    width: calc(100% - 32px);
+    border: 2px #756157 solid;
+    height: 0;
+    bottom: -2px;
+    background-color: #756157;
+    content: "";
+}
+
 .navigation-link-current {
     position: relative;
 }
@@ -156,6 +180,7 @@ body {
 
 .navigation-button:focus {
     background-color: #615048;
+    outline: none;
 }
 
 .navigation-button:active {
@@ -187,6 +212,13 @@ body {
     margin: 0;
 }
 
+.advantages-text-intro {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
 .advantages-title-intersection {
     font-weight: 700;
     font-size: 30px;
@@ -196,15 +228,23 @@ body {
     margin: 0;
 }
 
+.advantages-text-intersection {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
 .advantages-title {
     position: relative;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 28px;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
     max-width: 255px;
+    margin-bottom: 62px;
 }
 
 .advantages-title::before {
@@ -220,6 +260,10 @@ body {
 
 .advantages-item-darker .advantages-title::before {
     background-color: #ffffff4D;
+}
+
+.advantages-title-no-cross-line {
+    margin-bottom: 0;
 }
 
 .advantages-title-no-cross-line::before {
@@ -301,7 +345,7 @@ body {
 }
 
 .advantages-text {
-    margin-top: 62px;
+    margin: 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -335,6 +379,7 @@ body {
 
 .button:focus {
     background-color: #615048;
+    outline: none;
 }
 
 .button:active {
@@ -456,6 +501,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     background-color: #F2F2F2;
+    font-weight: 700;
 }
 
 .field::placeholder {
@@ -524,6 +570,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .catalog-hotels {
@@ -536,6 +583,7 @@ body {
     list-style-type: none;
     justify-content: center;
     gap: 10px;
+    margin: 0;
 }
 
 .catalog-type-button {
@@ -610,6 +658,10 @@ body {
     opacity: 30%;
 }
 
+.control:focus .control-mark {
+    outline: 3px solid #83B3D3;
+}
+
 .control:hover .control-label {
     opacity: 60%;
 }
@@ -618,7 +670,11 @@ body {
     opacity: 30%;
 }
 
-.control + .control-input:disabled + .control-mark {
+.control:focus .control-label {
+    outline: none;
+}
+
+.control .control-input:disabled + .control-mark {
     opacity: 30%;
     pointer-events: none;
 }
@@ -705,11 +761,15 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .find-hotels-text {
     font-size: 22px;
     line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 54px;
 }
 
 .find-hotels-button {
@@ -797,9 +857,9 @@ body {
 }
 
 .catalog-filter-label {
+    position: relative;
     display: flex;
     background-color: #F2F2F2;
-    padding: 12px 20px;
     border-radius: 4px 0 0 4px;
     width: 143px;
     justify-content: space-between;
@@ -821,17 +881,27 @@ body {
     font: inherit;
     font-size: 18px;
     line-height: 24px;
-    width: 50px;
+    width: 100px;
     border: none;
     background-color: transparent;
     appearance: textfield;
     font-weight: 700;
+    padding: 12px 20px;
 }
 
 .range-input::-webkit-inner-spin-button,
 .range-input::-webkit-outer-spin-button {
     appearance: none;
     margin: 0;
+}
+
+.input-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 22px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .catalog-filter-left {
@@ -1021,7 +1091,7 @@ body {
 
 .subscribe {
     text-align: center;
-    padding: 104px 258px;
+    padding: 96px 258px 104px 258px;
     background-image: url("../images/subscribe-background.jpg");
     color: #ffffff;
     background-repeat: no-repeat;
@@ -1040,11 +1110,15 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .subscribe-text {
     font-size: 22px;
     line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 54px;
 }
 
 .pagination {
@@ -1130,7 +1204,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 40px 70px;
+    padding: 40px 70px 30px 70px;
 }
 
 .footer-social-list {
@@ -1139,11 +1213,9 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 250px;
-    margin-top: 40px;
-    margin-bottom: 30px;
 }
 
 .footer-social-item {
@@ -1214,6 +1286,8 @@ body {
     position: relative;
     font-size: 16px;
     line-height: 21px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .breadcrumbs-item {
@@ -1246,6 +1320,7 @@ body {
     background-repeat: no-repeat;
     background-position: right 20px center;
     appearance: none;
+    margin-left: 190px;
 }
 
 .select-control:hover {
@@ -1254,6 +1329,7 @@ body {
 
 .select-control:focus {
     border-color: #68A2CA;
+    outline: none;
 }
 
 .select-control:active {
@@ -1334,11 +1410,15 @@ body {
 }
 
 .form-title {
+    display: flex;
     position: relative;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    padding: 12px 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    max-width: 290px;
 }
 
 .field-group {
@@ -1350,7 +1430,6 @@ body {
     position: relative;
     display: flex;
     background-color: #f2f2f2;
-    padding: 12px 20px;
     border-radius: 4px;
     width: 440px;
     height: 48px;
@@ -1381,20 +1460,32 @@ body {
     line-height: 24px;
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding: 12px 44px 12px 20px;
     width: 440px;
-    height: 24px;
+    outline: none;
+}
+
+.date-field:hover {
+    background-color: #E6E6E6;
+}
+
+.date-field:focus {
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.date-field:active {
+    outline: 3px solid #000000;
+    border-radius: 4px;
+    background-color: #F2F2F2;
 }
 
 .date-button {
     position: absolute;
     border: none;
-    background-image: url("../images/date-button.svg");
     width: 20px;
     height: 20px;
-    background-repeat: no-repeat;
     padding: 0;
-    background-position: center;
     cursor: pointer;
     opacity: 30%;
     right: 20px;
@@ -1416,21 +1507,34 @@ body {
 .modal-input {
     display: flex;
     gap: 46px;
+    justify-content: center;
+    align-items: center;
 }
 
 .plus-minus-input {
     display: flex;
     background-color: #F2F2F2;
     border-radius: 4px;
+    position: relative;
 }
 
 .minus-button {
-    padding: 14px 10px;
     margin: 0;
     border: none;
     cursor: pointer;
     color: #7561574D;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
 }
 
 .minus-button:hover {
@@ -1447,17 +1551,23 @@ body {
     opacity: 20%;
 }
 
-.minus-icon {
-    margin-bottom: 3px;
-}
-
 .plus-button {
     margin: 0;
-    padding: 14px 10px;
     border: none;
     cursor: pointer;
     color: #7561574D;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
 }
 
 .plus-button:hover {
@@ -1474,18 +1584,18 @@ body {
     opacity: 20%;
 }
 
-.plus-icon {
-    margin-top: 3px;
-}
-
 .number-input {
     padding: 14px 10px;
     border: none;
     background-color: transparent;
     width: 31px;
+    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
+    appearance: textfield;
+    width: 111px;
+    text-align: center;
 }
 
 .number-input::-webkit-inner-spin-button,
@@ -1527,10 +1637,10 @@ body {
 }
 
 .tooltip {
-    position: absolute;
-    left: 60px;
+    position: relative;
     width: 26px;
     height: 26px;
+    margin-left: 10px;
 }
 
 .tooltip-toggle {
