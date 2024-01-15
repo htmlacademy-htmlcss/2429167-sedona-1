@@ -1145,10 +1145,6 @@ body {
     background-color: #68A2CA;
 }
 
-.pagination-item:focus {
-    background-color: #68A2CA;
-}
-
 .pagination-item:active {
     background-color: #82B3D3;
     color: #FFFFFF4D;
@@ -1173,6 +1169,7 @@ body {
 }
 
 .pagination-link:focus {
+    background-color: #68A2CA;
     outline: none;
 }
 
@@ -1180,6 +1177,12 @@ body {
     background-color: #F2F2F2;
     color: #000000;
     border-radius: 4px;
+}
+
+.pagination-current:focus {
+    background-color: #F2F2F2;
+    color: #000000;
+    outline: none;
 }
 
 .pagination-interval {
