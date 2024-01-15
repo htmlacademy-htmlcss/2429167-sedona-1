@@ -51,7 +51,6 @@ body {
 
 .page-header-logo {
     position: relative;
-    margin-right: 30px;
     margin-bottom: -6px;
 }
 
@@ -59,6 +58,10 @@ body {
     position: relative;
     margin-right: 30px;
     margin-bottom: -6px;
+}
+
+.header-logo-link:focus {
+    outline: 3px solid #83B3D3;
 }
 
 .navigation-list {
@@ -93,28 +96,16 @@ body {
     text-decoration: none;
 }
 
-.navigation-link:hover::before {
-    position: absolute;
-    width: calc(100% - 32px);
-    border: 2px #756157 solid;
-    height: 0;
-    bottom: -2px;
-    background-color: #756157;
-    content: "";
+.navigation-link:hover {
+    opacity: 60%;
 }
 
 .navigation-link:focus {
     outline: none;
 }
 
-.navigation-link:focus::before {
-    position: absolute;
-    width: calc(100% - 32px);
-    border: 2px #756157 solid;
-    height: 0;
-    bottom: -2px;
-    background-color: #756157;
-    content: "";
+.navigation-link:focus {
+    opacity: 30%;
 }
 
 .navigation-link-current {
@@ -581,9 +572,11 @@ body {
 .catalog-type-list {
     display: flex;
     list-style-type: none;
-    justify-content: center;
     gap: 10px;
     margin: 0;
+    width: 164px;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .catalog-type-button {
@@ -650,31 +643,21 @@ body {
     background-color: #ffffff;
 }
 
-.control:hover .control-mark {
-    opacity: 60%;
+.control-input + .control-mark,
+.control-input ~ .control-label {
+    cursor: pointer;
 }
 
-.control:active .control-mark {
-    opacity: 30%;
+.control-input:hover + .control-mark,
+.control-input:hover ~ .control-label {
+    opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
     outline: 3px solid #83B3D3;
 }
 
-.control:hover .control-label {
-    opacity: 60%;
-}
-
-.control:active .control-label {
-    opacity: 30%;
-}
-
-.control:focus .control-label {
-    outline: none;
-}
-
-.control .control-input:disabled + .control-mark {
+.control-input:disabled + .control-mark {
     opacity: 30%;
     pointer-events: none;
 }
@@ -881,18 +864,28 @@ body {
     font: inherit;
     font-size: 18px;
     line-height: 24px;
-    width: 100px;
+    width: 143px;
     border: none;
     background-color: transparent;
     appearance: textfield;
     font-weight: 700;
-    padding: 12px 20px;
+    padding: 12px 50px 12px 20px;
 }
 
 .range-input::-webkit-inner-spin-button,
 .range-input::-webkit-outer-spin-button {
     appearance: none;
     margin: 0;
+}
+
+.range-input:focus {
+    outline: 3px solid #82B3D3;
+    border-radius: 4px;
+}
+
+.range-input:active {
+    outline: 3px solid #000000;
+    border-radius: 4px;
 }
 
 .input-text {
@@ -1166,6 +1159,10 @@ body {
     text-align: center;
 }
 
+.pagination-link:focus {
+    outline: none;
+}
+
 .pagination-current {
     background-color: #F2F2F2;
     color: #000000;
@@ -1288,6 +1285,19 @@ body {
     line-height: 21px;
     color: #ffffff;
     text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+    opacity: 60%;
+}
+
+.breadcrumbs-link:focus {
+    opacity: 60%;
+    outline: none;
+}
+
+.breadcrumbs-link:active {
+    opacity: 30%;
 }
 
 .breadcrumbs-item {
@@ -1598,6 +1608,11 @@ body {
     text-align: center;
 }
 
+.number-input:focus {
+    outline: 3px solid #82B3D3;
+    border-radius: 4px;
+}
+
 .number-input::-webkit-inner-spin-button,
 .number-input::-webkit-outer-spin-button {
     appearance: none;
@@ -1633,7 +1648,7 @@ body {
 }
 
 .input-tooltip {
-    gap: 82px;
+    gap: 46px;
 }
 
 .tooltip {
