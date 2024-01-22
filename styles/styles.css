@@ -920,7 +920,6 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto 28px 21px 36px 36px;
   border: 1px solid #E6E6E6;
   padding: 20px;
   gap: 20px;
