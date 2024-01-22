@@ -541,11 +541,6 @@ body {
   padding: 0;
 }
 
-.catalog-filter-checkboxes {
-  display: flex;
-  flex-direction: column;
-}
-
 .checkbox-list {
   display: flex;
   flex-direction: column;
