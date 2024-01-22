@@ -272,7 +272,7 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 385px;
-  padding: 102px 85px;
+  padding: 112px 85px;
 }
 
 .advantages-item-full {
@@ -809,7 +809,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 36px;
+  margin-top: 46px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1059,6 +1059,7 @@ body {
   list-style-type: none;
   margin-bottom: 80px;
   padding-left: 70px;
+  margin-top: 0;
 }
 
 .hotel-card-stars {
@@ -1102,7 +1103,7 @@ body {
 
 .subscribe-inner {
   text-align: center;
-  padding: 104px 258px;
+  padding: 156px 258px 104px 258px;
 }
 
 .subscribe-title {
@@ -1290,7 +1291,6 @@ body {
   padding-left: 0;
   gap: 10px;
   margin: 0;
-  margin-top: 8px;
 }
 
 .breadcrumbs-link {
@@ -1344,7 +1344,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
-  margin-left: 190px;
+  margin-left: 138px;
 }
 
 .select-control:hover {
