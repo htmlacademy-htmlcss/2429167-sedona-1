@@ -797,7 +797,7 @@ body {
   padding: 35px 70px 35px 70px;
   background-repeat: no-repeat;
   background-position: 0;
-  background-size: 1200px 476px;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -1286,6 +1286,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding-left: 0;
   gap: 10px;
