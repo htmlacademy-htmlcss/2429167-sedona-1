@@ -536,7 +536,6 @@ body {
   gap: 16px;
   margin: 0;
   margin-top: 32px;
-  height: 141px;
 }
 
 .catalog-filter-group {
@@ -577,11 +576,6 @@ body {
   text-transform: uppercase;
   margin: 0;
   width: 340px;
-}
-
-.catalog-hotels {
-  display: flex;
-  flex-direction: column;
 }
 
 .catalog-type-list {
