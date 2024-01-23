@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -68,26 +70,24 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <div class="catalog-filter-left">
             <fieldset class="catalog-filter-group">
-              <div class="catalog-filter-checkboxes">
-                <legend class="catalog-filter-title">Инфраструктура</legend>
-                <span class="checkbox-list">
-                  <label class="control control-checkbox">
-                    <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Бассейн</span>
-                  </label>
-                  <label class="control control-checkbox">
-                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
-                    <span class="control-mark"></span>
-                    <span class="control-label">Парковка</span>
-                  </label>
-                  <label class="control control-checkbox">
-                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
-                    <span class="control-mark"></span>
-                    <span class="control-label">Wi-Fi</span>
-                  </label>
-                </span>
-              </div>
+              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <span class="checkbox-list">
+                <label class="control control-checkbox">
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
+                </label>
+                <label class="control control-checkbox">
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
+                </label>
+                <label class="control control-checkbox">
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
+                </label>
+              </span>
             </fieldset>
 
             <fieldset class="catalog-filter-group">
@@ -159,9 +159,9 @@
         <h2 class="catalog-hotels-title">Найдено гостиниц: 38</h2>
 
         <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Популярное</option>
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Популярное</option>
         </select>
 
         <ul class="catalog-type-list">
@@ -185,7 +185,9 @@
 
       <ul class="hotel-cards-list">
         <li class="hotel-card">
-          <img class="hotel-card-image" src="images/hotel-1.jpg" alt="">
+          <a class="hotel-card-image-link" href="#">
+            <img width="300" height="212" class="hotel-card-image" src="images/hotel-1.jpg" alt="">
+          </a>
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 4000 ₽</p>
@@ -195,7 +197,9 @@
           <a class="hotel-card-rating">Рейтинг: 8,5</a>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="images/hotel-2.jpg" alt="">
+          <a class="hotel-card-image-link" href="#">
+            <img width="300" height="212" class="hotel-card-image" src="images/hotel-2.jpg" alt="">
+          </a>
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 5000 ₽</p>
@@ -205,7 +209,9 @@
           <a class="hotel-card-rating">Рейтинг: 9,2</a>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="images/hotel-3.jpg" alt="">
+          <a class="hotel-card-image-link" href="#">
+            <img width="300" height="212" class="hotel-card-image" src="images/hotel-3.jpg" alt="">
+          </a>
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 2500 ₽</p>
@@ -215,7 +221,9 @@
           <a class="hotel-card-rating">Рейтинг: 6,9</a>
         </li>
         <li class="hotel-card">
-          <img class="hotel-card-image" src="images/hotel-4.jpg" alt="">
+          <a class="hotel-card-image-link" href="#">
+            <img width="300" height="212" class="hotel-card-image" src="images/hotel-4.jpg" alt="">
+          </a>
           <h3 class="hotel-card-title">GreenTree Inn</h3>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 1500 ₽</p>
@@ -249,7 +257,7 @@
 
     <section class="subscribe-inner">
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-      <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="newsletter">
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>

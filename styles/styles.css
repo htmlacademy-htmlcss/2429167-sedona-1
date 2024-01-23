@@ -58,6 +58,7 @@ body {
   position: relative;
   margin-right: 30px;
   margin-bottom: -6px;
+  align-self: flex-start;
 }
 
 .header-logo-link:focus {
@@ -71,6 +72,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 600px;
 }
 
 .navigation-user {
@@ -272,7 +274,7 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 385px;
-  padding: 102px 85px;
+  padding: 112px 85px;
 }
 
 .advantages-item-full {
@@ -384,11 +386,13 @@ body {
 }
 
 .button-reset {
-  background-color: transparent;
-  margin: 32px;
-  transition: color 0.6s ease;
-  font-size: 16px;
-  line-height: 20px;
+    background-color: transparent;
+    margin-top: 32px;
+    transition: color 0.6s ease;
+    font-size: 16px;
+    line-height: 20px;
+    width: 191px;
+    padding: 8px 50px;
 }
 
 .button-reset:hover {
@@ -521,6 +525,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .catalog-filter-list {
@@ -531,7 +536,6 @@ body {
   gap: 16px;
   margin: 0;
   margin-top: 32px;
-  height: 141px;
 }
 
 .catalog-filter-group {
@@ -539,11 +543,8 @@ body {
   flex-direction: column;
   border-style: none;
   padding: 0;
-}
-
-.catalog-filter-checkboxes {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  margin-top: 2px;
 }
 
 .checkbox-list {
@@ -558,7 +559,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 191px;
-  margin-top: 56px;
+  margin-top: 59px;
 }
 
 .catalog-options {
@@ -574,19 +575,15 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-}
-
-.catalog-hotels {
-  display: flex;
-  flex-direction: column;
+  width: 340px;
 }
 
 .catalog-type-list {
   display: flex;
   list-style-type: none;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
-  width: 164px;
+  width: 160px;
   flex-wrap: wrap;
   padding: 0;
 }
@@ -638,7 +635,6 @@ body {
   display: block;
   font-size: 18px;
   line-height: 23px;
-  height: 23px;
 }
 
 .control.control-checkbox {
@@ -773,12 +769,12 @@ body {
   color: #ffffff;
   background-color: #756157;
   width: 376px;
-  height: 52px;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   transition: color 0.6s ease;
+  padding: 8px 50px;
 }
 
 .find-hotels-button:hover {
@@ -799,10 +795,11 @@ body {
 
 .catalog-filter-container {
   background-image: url("../images/filter-background.jpg");
-  padding: 35px 70px 35px 70px;
+  background-color: #756157;
+  padding: 35px 70px 70px 70px;
   background-repeat: no-repeat;
   background-position: 0;
-  background-size: 1200px 476px;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -814,7 +811,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 36px;
+  margin-top: 44px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -869,7 +866,7 @@ body {
 .range-wrapper-inputs {
   display: flex;
   gap: 2px;
-  margin-top: 32px;
+  margin-top: 35px;
 }
 
 .range-input {
@@ -894,6 +891,7 @@ body {
 .range-input:focus {
   outline: 3px solid #82B3D3;
   border-radius: 4px;
+  z-index: 2;
 }
 
 .range-input:active {
@@ -905,7 +903,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 22px;
+  right: 20px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -925,11 +923,11 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto 28px 21px 36px 36px;
   border: 1px solid #E6E6E6;
   padding: 20px;
   gap: 20px;
-  row-gap: 16px;
+  row-gap: 14px;
+  align-items: start;
 }
 
 .hotel-card-title {
@@ -1052,9 +1050,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 9px;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .hotel-cards-list {
@@ -1062,8 +1061,22 @@ body {
   grid-template-columns: 340px 340px 340px;
   gap: 20px;
   list-style-type: none;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
   padding-left: 70px;
+  margin-top: 0;
+  position: relative;
+  align-items: start;
+}
+
+.hotel-cards-list:before {
+  position: absolute;
+  height: 2px;
+  width: 1060px;
+  bottom: -39px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  background-color: #E6E6E6;
 }
 
 .hotel-card-stars {
@@ -1072,7 +1085,7 @@ body {
   background-image: url("../images/hotel-star.svg");
   background-repeat: space;
   height: 32px;
-  background-position-y: center;
+  background-position-y: 11px;
 }
 
 .hotel-card-five-stars {
@@ -1084,11 +1097,11 @@ body {
 }
 
 .hotel-card-third-stars {
-  width: 70px;
+  width: 65px;
 }
 
 .hotel-card-two-stars {
-  width: 40px;
+  width: 38px;
 }
 
 .hotel-card-one-star {
@@ -1107,7 +1120,7 @@ body {
 
 .subscribe-inner {
   text-align: center;
-  padding: 104px 258px;
+  padding: 156px 258px 104px 258px;
 }
 
 .subscribe-title {
@@ -1229,7 +1242,7 @@ body {
   padding: 0;
   justify-content: flex-start;
   align-items: center;
-  width: 250px;
+  width: 147px;
 }
 
 .footer-social-item {
@@ -1238,10 +1251,11 @@ body {
 
 .social-button {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   color: #83B3D3;
   transition: color 0.6s ease;
+  padding: 1px 10px;
 }
 
 .social-button:hover {
@@ -1267,8 +1281,9 @@ body {
 }
 
 .made-by {
-  width: 250px;
+  width: 120px;
   text-align: right;
+  padding-top: 8px;
 }
 
 .made-by-link {
@@ -1291,11 +1306,11 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   padding-left: 0;
   gap: 10px;
   margin: 0;
-  margin-top: 8px;
 }
 
 .breadcrumbs-link {
@@ -1337,19 +1352,21 @@ body {
 }
 
 .select-control {
+  font: inherit;
   width: 290px;
   height: 49px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 17px;
+  padding-right: 17px;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
+  background-color: #FFFFFF;
   appearance: none;
-  margin-left: 190px;
+  margin-left: 130px;
 }
 
 .select-control:hover {
@@ -1470,6 +1487,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   bottom: -25px;
+  left: 20px;
   margin: 0;
 }
 
@@ -1479,6 +1497,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   bottom: -25px;
+  left: 20px;
   margin: 0;
 }
 
@@ -1701,7 +1720,7 @@ body {
   line-height: 20px;
   font-weight: normal;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 21px 22px 22px;
   border-radius: 10px;
   display: none;
   width: 256px;
