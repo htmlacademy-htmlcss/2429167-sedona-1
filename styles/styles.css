@@ -385,7 +385,7 @@ body {
 
 .button-reset {
   background-color: transparent;
-  margin: 32px;
+  margin: 39px 32px 32px 32px;
   transition: color 0.6s ease;
   font-size: 16px;
   line-height: 20px;
@@ -521,6 +521,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .catalog-filter-list {
@@ -539,6 +540,8 @@ body {
   flex-direction: column;
   border-style: none;
   padding: 0;
+  margin: 0;
+  margin-top: 2px;
 }
 
 .checkbox-list {
@@ -553,7 +556,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 191px;
-  margin-top: 56px;
+  margin-top: 59px;
 }
 
 .catalog-options {
@@ -579,9 +582,9 @@ body {
 .catalog-type-list {
   display: flex;
   list-style-type: none;
-  gap: 10px;
+  gap: 8px;
   margin: 0;
-  width: 164px;
+  width: 160px;
   flex-wrap: wrap;
   padding: 0;
 }
@@ -809,7 +812,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 46px;
+  margin-top: 44px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -864,7 +867,7 @@ body {
 .range-wrapper-inputs {
   display: flex;
   gap: 2px;
-  margin-top: 32px;
+  margin-top: 35px;
 }
 
 .range-input {
@@ -1056,9 +1059,21 @@ body {
   grid-template-columns: 340px 340px 340px;
   gap: 20px;
   list-style-type: none;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
   padding-left: 70px;
   margin-top: 0;
+  position: relative;
+}
+
+.hotel-cards-list:before {
+  position: absolute;
+  height: 2px;
+  width: 1060px;
+  bottom: -39px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  background-color: #E6E6E6;
 }
 
 .hotel-card-stars {
@@ -1333,20 +1348,21 @@ body {
 }
 
 .select-control {
+  font: inherit;
   width: 290px;
   height: 49px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   font-size: 18px;
   line-height: 21px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 17px;
+  padding-right: 17px;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   background-color: #FFFFFF;
   appearance: none;
-  margin-left: 138px;
+  margin-left: 130px;
 }
 
 .select-control:hover {
