@@ -795,7 +795,7 @@ body {
 
 .catalog-filter-container {
   background-image: url("../images/filter-background.jpg");
-  padding: 35px 70px 35px 70px;
+  padding: 35px 70px 70px 70px;
   background-repeat: no-repeat;
   background-position: 0;
   background-size: cover;
