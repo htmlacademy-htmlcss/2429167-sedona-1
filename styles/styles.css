@@ -1343,6 +1343,7 @@ body {
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-color: #FFFFFF;
   appearance: none;
   margin-left: 138px;
 }
