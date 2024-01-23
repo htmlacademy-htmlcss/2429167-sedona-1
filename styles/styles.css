@@ -795,6 +795,7 @@ body {
 
 .catalog-filter-container {
   background-image: url("../images/filter-background.jpg");
+  background-color: #756157;
   padding: 35px 70px 70px 70px;
   background-repeat: no-repeat;
   background-position: 0;
@@ -925,7 +926,7 @@ body {
   border: 1px solid #E6E6E6;
   padding: 20px;
   gap: 20px;
-  row-gap: 16px;
+  row-gap: 14px;
   align-items: start;
 }
 
@@ -1049,8 +1050,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 9px;
   border-radius: 4px;
   text-transform: uppercase;
 }
@@ -1064,6 +1065,7 @@ body {
   padding-left: 70px;
   margin-top: 0;
   position: relative;
+  align-items: start;
 }
 
 .hotel-cards-list:before {
@@ -1083,7 +1085,7 @@ body {
   background-image: url("../images/hotel-star.svg");
   background-repeat: space;
   height: 32px;
-  background-position-y: center;
+  background-position-y: 11px;
 }
 
 .hotel-card-five-stars {
@@ -1095,11 +1097,11 @@ body {
 }
 
 .hotel-card-third-stars {
-  width: 70px;
+  width: 65px;
 }
 
 .hotel-card-two-stars {
-  width: 40px;
+  width: 38px;
 }
 
 .hotel-card-one-star {
@@ -1281,6 +1283,7 @@ body {
 .made-by {
   width: 120px;
   text-align: right;
+  padding-top: 8px;
 }
 
 .made-by-link {
