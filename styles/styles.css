@@ -1174,7 +1174,7 @@ body {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   padding: 12px 2px;
   font-size: 20px;
