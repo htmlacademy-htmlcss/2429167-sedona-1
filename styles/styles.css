@@ -301,6 +301,10 @@ body {
   order: -1;
 }
 
+.advantages-item-full .advantages-text {
+  color: #ffffff;
+}
+
 .advantages-item img {
   display: block;
   height: 100%;
@@ -1648,7 +1652,6 @@ body {
   padding: 14px 10px;
   border: none;
   background-color: transparent;
-  width: 31px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 20px;
